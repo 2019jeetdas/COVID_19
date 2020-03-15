@@ -1,0 +1,84 @@
+#Question - C : print country/region name (using GROUP BY method) and no. of states :
+
+country_names = df.groupby(['Country_Region'])[['Province/State']].count()
+print("---------------------------------")
+print("\t Country/Region  names : ")
+print("-------------------------------")
+print(country_names)
+print("-------------------------------")
+count = 0
+for row in range(len(country_names)): 
+        count = count+1
+print("total no. of available  country/Region = ",count)        
+print("-----------------------------\n")
+---------------------------------
+         Country/Region  names : 
+-------------------------------
+                        Province/State
+Country_Region                        
+Afghanistan                          0
+Algeria                              0
+Andorra                              0
+Argentina                            0
+Armenia                              0
+Australia                            8
+Austria                              0
+Azerbaijan                           0
+Bahrain                              0
+Bangladesh                           0
+Belarus                              0
+Belgium                              0
+Bhutan                               0
+Bosnia and Herzegovina               0
+Brazil                               0
+Bulgaria                             0
+Cambodia                             0
+Cameroon                             0
+Canada                               6
+Chile                                0
+Colombia                             0
+Costa Rica                           0
+Croatia                              0
+Czech Republic                       0
+Denmark                              0
+Dominican Republic                   0
+Ecuador                              0
+Egypt                                0
+Estonia                              0
+Faroe Islands                        0
+                               ...
+Poland                               0
+Portugal                             0
+Qatar                                0
+Republic of Ireland                  0
+Romania                              0
+Russia                               0
+Saint Barthelemy                     0
+San Marino                           0
+Saudi Arabia                         0
+Senegal                              0
+Serbia                               0
+Singapore                            0
+Slovakia                             0
+Slovenia                             0
+South Africa                         0
+South Korea                          0
+Spain                                0
+Sri Lanka                            0
+Sweden                               0
+Switzerland                          0
+Taiwan                               1
+Thailand                             0
+Togo                                 0
+Tunisia                              0
+UK                                   0
+US                                 106
+Ukraine                              0
+United Arab Emirates                 0
+Vatican City                         0
+Vietnam                              0
+
+[108 rows x 1 columns]
+-------------------------------
+total no. of available  country/Region =  108
+-----------------------------
