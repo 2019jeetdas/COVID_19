@@ -1,0 +1,24 @@
+# Question – B : print column names :
+
+print('------------------------\n Column names as follows :')
+print('------------------------\n')
+count = 0
+for col in df.columns: 
+        print(count,"-->",col)
+        count = count+1
+print("\n-----------------------------\n")
+------------------------
+ Column names as follows :
+------------------------
+
+0 --> Province/State
+1 --> Country_Region
+2 --> Last Update
+3 --> Confirmed
+4 --> Deaths
+5 --> Recovered
+6 --> Latitude
+7 --> Longitude
+
+-----------------------------
+

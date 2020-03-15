@@ -1,0 +1,8 @@
+# Question – A : get row and column numbers 
+
+print('---------------------------------------------')
+print("Dimension of the data frame = ",df.shape)
+print('---------------------------------------------')
+---------------------------------------------
+Dimension of the data frame =  (255, 8)
+---------------------------------------------
